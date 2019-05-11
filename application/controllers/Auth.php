@@ -67,10 +67,10 @@ class Auth extends CI_Controller
 		}
 		else
 		{
-			$this->load->view('layouts/guest_header', $this->data);
-			$this->load->view('layouts/guest_navbar');
+			$this->load->view('pages/admin/admin_header', $this->data);
+			$this->load->view('pages/admin/admin_navbar');
 			$this->load->view('pages/admin/dashboard');
-			$this->load->view('layouts/guest_footer');
+			$this->load->view('pages/admin/admin_header');
 			
 		}
 	}
