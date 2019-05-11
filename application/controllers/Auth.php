@@ -51,6 +51,49 @@ class Auth extends CI_Controller
 		}
 	}
 
+	public function admin_dashboard()
+	{
+		$this->data['title'] = "Admin Dashboard";
+
+		if (!$this->ion_auth->logged_in())
+		{
+			// redirect them to the login page
+			redirect('login', 'refresh');
+		}
+		else if (!$this->ion_auth->is_admin()) // remove this elseif if you want to enable this for non-admins
+		{
+			// redirect them to the home page because they must be an administrator to view this
+			return show_error('You must be an administrator to view this page.');
+		}
+		else
+		{
+			$this->load->view('layouts/guest_header', $this->data);
+			$this->load->view('layouts/guest_navbar');
+			$this->load->view('pages/admin/dashboard');
+			$this->load->view('layouts/guest_footer');
+			
+		}
+	}
+
+	public function guest_dashboard()
+	{
+		$this->data['title'] = "Member Dashboard";
+
+		if (!$this->ion_auth->logged_in())
+		{
+			// redirect them to the login page
+			redirect('login', 'refresh');
+		}
+		else
+		{
+			$this->load->view('layouts/guest_header', $this->data);
+			$this->load->view('layouts/guest_navbar');
+			$this->load->view('pages/guest/dashboard');
+			$this->load->view('layouts/guest_footer');
+			
+		}
+	}
+
 	/**
 	 * Log the user in
 	 */
@@ -72,8 +115,16 @@ class Auth extends CI_Controller
 			{
 				//if the login is successful
 				//redirect them back to the home page
+			
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
-				redirect('/', 'refresh');
+
+				if (!$this->ion_auth->is_admin()) // remove this elseif if you want to enable this for non-admins
+				{
+					redirect('guest-dashboard', 'refresh');
+				} else{
+					redirect('dashboard', 'refresh');
+				}
+				
 			}
 			else
 			{
@@ -98,9 +149,6 @@ class Auth extends CI_Controller
 				'id' => 'password',
 				'type' => 'password',
 			);
-
-			// $this->_render_page('auth' . DIRECTORY_SEPARATOR . 'login', $this->data);
-
 			$this->load->view('layouts/guest_header', $this->data);
 			$this->load->view('layouts/guest_navbar');
 			$this->load->view('pages/new_login');
@@ -121,7 +169,7 @@ class Auth extends CI_Controller
 
 		// redirect them to the login page
 		$this->session->set_flashdata('message', $this->ion_auth->messages());
-		redirect('auth/login', 'refresh');
+		redirect('login', 'refresh');
 	}
 
 	/**

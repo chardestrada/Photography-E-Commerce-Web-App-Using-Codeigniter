@@ -58,13 +58,13 @@
                     <label for="identity">Username</label>
                   </div>
                   <div class="md-form">
-                    <i class="fas fa-envelope prefix grey-text"></i>
+                    <i class="fas fa-unlock-alt prefix grey-text"></i>
                     <input type="password" name="password" id="password" class="form-control">
                     <label for="password">Password</label>
                   </div>
                   <div class="custom-control custom-checkbox">
                       <input type="checkbox" name="remember" value="1" id="remember" class="custom-control-input">
-                      <label class="custom-control-label" for="defaultUnchecked">Remember Me</label>
+                      <label class="custom-control-label" for="remember">Remember Me</label>
                   </div>
                   <div class="text-center">
                     <button type="submit" class="btn btn-indigo">Submit</button>

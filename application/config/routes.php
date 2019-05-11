@@ -63,8 +63,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route = array(
     'default_controller' => 'home', 
-    'home' => 'home',
-    'login'=> 'auth/login',
+    'home'  => 'home',
+    'login'     => 'auth/login',
+    'dashboard'=> 'auth/admin_dashboard',
+    'guest-dashboard' => 'auth/guest_dashboard',
 
     '404_override' => '', 
     'api/example/users/(:num)' => 'api/example/users/id/$1',
