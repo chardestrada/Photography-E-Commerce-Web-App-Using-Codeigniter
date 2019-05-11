@@ -475,13 +475,13 @@
    
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="<?php echo base_url()?>../node_modules/mdb/new_assets/js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>../node_modules/mdb/js/jquery-3.4.0.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="<?php echo base_url()?>../node_modules/mdb/new_assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>../node_modules/mdb/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="<?php echo base_url()?>../node_modules/mdb/new_assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>../node_modules/mdb/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="<?php echo base_url()?>../node_modules/mdb/new_assets/js/mdb.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>../node_modules/mdb/js/mdb.min.js"></script>
       <!-- Initializations -->
   <script type="text/javascript">
     // Animations initialization

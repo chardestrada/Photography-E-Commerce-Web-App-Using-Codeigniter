@@ -45,39 +45,33 @@
               <div class="card-body">
 
                 <!-- Form -->
-                <form name="">
+                <form action="login" method="post" accept-charset="utf-8">
                   <!-- Heading -->
                   <h3 class="dark-grey-text text-center">
-                    <strong>Write to us:</strong>
+                    <strong>Login</strong>
                   </h3>
                   <hr>
-
+                  <div id="infoMessage"><?php echo $message;?></div>
                   <div class="md-form">
                     <i class="fas fa-user prefix grey-text"></i>
-                    <input type="text" id="form3" class="form-control">
-                    <label for="form3">Your name</label>
+                    <input type="text" name="identity" id="identity" class="form-control">
+                    <label for="identity">Username</label>
                   </div>
                   <div class="md-form">
                     <i class="fas fa-envelope prefix grey-text"></i>
-                    <input type="text" id="form2" class="form-control">
-                    <label for="form2">Your email</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                    <label for="password">Password</label>
                   </div>
-
-                  <div class="md-form">
-                    <i class="fas fa-pencil-alt prefix grey-text"></i>
-                    <textarea type="text" id="form8" class="md-textarea"></textarea>
-                    <label for="form8">Your message</label>
+                  <div class="custom-control custom-checkbox">
+                      <input type="checkbox" name="remember" value="1" id="remember" class="custom-control-input">
+                      <label class="custom-control-label" for="defaultUnchecked">Remember Me</label>
                   </div>
-
                   <div class="text-center">
-                    <button class="btn btn-indigo">Send</button>
-                    <hr>
-                    <fieldset class="form-check">
-                      <input type="checkbox" class="form-check-input" id="checkbox1">
-                      <label for="checkbox1" class="form-check-label dark-grey-text">Subscribe me to the newsletter</label>
-                    </fieldset>
+                    <button type="submit" class="btn btn-indigo">Submit</button>
                   </div>
-
+                  <div class="text-center">
+                    <p><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
+                  </div>
                 </form>
                 <!-- Form -->
 

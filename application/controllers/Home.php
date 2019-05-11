@@ -16,16 +16,5 @@ class Home extends CI_Controller {
         $this->load->view('layouts/guest_footer');
     }
 
-    public function login()
-    {
-        $data = array(
-            'title' => "Login", 
-        
-        );
-
-        $this->load->view('layouts/guest_header', $data);
-        $this->load->view('layouts/guest_navbar');
-        $this->load->view('pages/new_login');
-        $this->load->view('layouts/guest_footer');
-    }
+   
 }

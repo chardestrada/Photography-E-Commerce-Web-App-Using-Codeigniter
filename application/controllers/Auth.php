@@ -80,7 +80,7 @@ class Auth extends CI_Controller
 				// if the login was un-successful
 				// redirect them back to the login page
 				$this->session->set_flashdata('message', $this->ion_auth->errors());
-				redirect('auth/login', 'refresh'); // use redirects instead of loading views for compatibility with MY_Controller libraries
+				redirect('login', 'refresh'); // use redirects instead of loading views for compatibility with MY_Controller libraries
 			}
 		}
 		else
@@ -88,7 +88,7 @@ class Auth extends CI_Controller
 			// the user is not logging in so display the login page
 			// set the flash data error message if there is one
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-
+			$this->data['title'] = "Login";
 			$this->data['identity'] = array('name' => 'identity',
 				'id' => 'identity',
 				'type' => 'text',
@@ -99,7 +99,13 @@ class Auth extends CI_Controller
 				'type' => 'password',
 			);
 
-			$this->_render_page('auth' . DIRECTORY_SEPARATOR . 'login', $this->data);
+			// $this->_render_page('auth' . DIRECTORY_SEPARATOR . 'login', $this->data);
+
+			$this->load->view('layouts/guest_header', $this->data);
+			$this->load->view('layouts/guest_navbar');
+			$this->load->view('pages/new_login');
+			$this->load->view('layouts/guest_footer');
+			
 		}
 	}
 
