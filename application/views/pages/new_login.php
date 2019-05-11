@@ -15,21 +15,16 @@
           <!--Grid column-->
           <div class="col-md-6 mb-4 white-text text-center text-md-left">
 
-            <h1 class="display-4 font-weight-bold">Learn Bootstrap 4 with MDB</h1>
+            <h1 class="display-4 font-weight-bold">Make money with your photos</h1>
 
             <hr class="hr-light">
 
-            <p>
-              <strong>Best & free guide of responsive web design</strong>
-            </p>
-
             <p class="mb-4 d-none d-md-block">
-              <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                available. Create your own, stunning website.</strong>
+              <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </strong>
             </p>
 
-            <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-indigo btn-lg">Start free tutorial
-              <i class="fas fa-graduation-cap ml-2"></i>
+            <a target="_blank" href="#" class="btn btn-indigo btn-lg">Find Our More
+              <i class="fas fa-info ml-2"></i>
             </a>
 
           </div>

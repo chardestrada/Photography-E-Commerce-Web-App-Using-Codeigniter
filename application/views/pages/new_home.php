@@ -25,7 +25,7 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
+                <strong>Make money with your photos</strong>
               </h1>
 
               <p>
@@ -33,12 +33,11 @@
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</strong>
               </p>
 
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
+              <a target="_blank" href="login" class="btn btn-outline-white btn-lg">Sign Up Now
+                <i class="fas fa-hand-holding-usd ml-2"></i>
               </a>
             </div>
             <!-- Content -->
@@ -60,7 +59,7 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
+                <strong>Make money with your photos</strong>
               </h1>
 
               <p>
@@ -68,15 +67,17 @@
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</strong>
               </p>
 
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
+              <a target="_blank" href="login" class="btn btn-outline-white btn-lg">Sign Up Now
+                <i class="fas fa-hand-holding-usd ml-2"></i>
               </a>
             </div>
             <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
 
           </div>
           <!-- Mask & flexbox options-->
@@ -95,7 +96,7 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
+                <strong>Make money with your photos</strong>
               </h1>
 
               <p>
@@ -103,19 +104,17 @@
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</strong>
               </p>
 
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
+              <a target="_blank" href="login" class="btn btn-outline-white btn-lg">Sign Up Now
+                <i class="fas fa-hand-holding-usd ml-2"></i>
               </a>
             </div>
             <!-- Content -->
 
           </div>
           <!-- Mask & flexbox options-->
-
         </div>
       </div>
       <!--/Third slide-->
